@@ -11,7 +11,9 @@ from util.routines import *
 class Bot(BotCommandAgent):
     # This function runs every in-game tick (every time the game updates anything)
     def run(self):
-        # set_intent tells the bot what it's trying to do
-        speed = 500
-        self.set_intent(drive(500))
+        # set_intent tells the bot what it's trying to d
+        self.set_intent(kickoff())
+        self.set_intent(atba())
+        '''
         print(f"My X position is: {self.me.location.x}")
+        '''
