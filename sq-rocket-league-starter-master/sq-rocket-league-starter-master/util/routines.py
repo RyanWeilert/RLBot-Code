@@ -8,7 +8,10 @@ from util.objects import Routine
 # Note that the lines above (imports) have changed from the videos.
 # This is to provide a better coding experience for you. Don't change them!
 # Unless you know what you're doing :)
-
+class jumper():
+    def run(self, agent):
+        print("I want to jump", agent.time) 
+        agent.controller.jump = True
 # Similarly, in the videos drive does not have "(Routine)" behind it. That's  just telling the program
 # that the "drive" class should look like a "Routine" above. It helps with the code suggestions. 
 class drive(Routine):
